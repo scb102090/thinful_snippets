@@ -1,0 +1,179 @@
+
+---1. what is the most expensive listing?
+SELECT 
+	id, 
+	name,
+	price
+FROM 
+	listings
+ORDER BY 3 DESC
+
+---I can't use price as is in the listings table, because it is text but with characters like $.
+---The price under listings_summary doesnt have those characters.
+---I can replace the '$' and ',' in price which i will do for question 3, but for the purpose of
+--this question I will illustrate the use of join, using price from the listings_summary table
+
+SELECT 
+	id, 
+	name,
+	CAST(price AS NUMERIC) price
+FROM 
+	listings_summary
+
+ORDER BY price DESC
+Limit 10
+
+--LOHI! MBR w jacuzzi appears to be the most expensive per night.
+-- This is very expensive, but I did verify that this listing exits on airbnb
+--So now I want to find out more about the space. 
+
+---
+SELECT 
+	l.id,
+	l.name,
+	l.neighbourhood,
+	l.description,
+	l.property_type, 
+	l.room_type,
+	l.accommodates,
+	l.bathrooms,
+	l.bedrooms,
+	l.beds, 
+	l.amenities,
+	cast(ls.price AS NUMERIC) price_conv,
+	l.security_deposit, 
+	l.cleaning_fee,
+	l.review_scores_rating,
+	l.number_of_reviews, 
+	l.reviews_per_month
+FROM 
+	listings l
+JOIN 
+	listings_summary ls
+ON 
+	l.id=ls.id
+ORDER BY price_conv desc
+LIMIT 1
+
+--Let's look at the second most expensive. 
+---For 1 bedroom, and having to share the house, and the fact there is only 8 reviews 
+---and it costs 10k a night makes me suspicious
+
+SELECT 
+	l.id,
+	l.name,
+	l.neighbourhood,
+	l.description,
+	l.property_type, 
+	l.room_type,
+	l.accommodates,
+	l.bathrooms,
+	l.bedrooms,
+	l.beds, 
+	l.amenities,
+	cast(ls.price AS NUMERIC) price_conv,
+	l.security_deposit, 
+	l.cleaning_fee,
+	l.review_scores_rating,
+	l.number_of_reviews, 
+	l.reviews_per_month
+FROM 
+	listings l
+JOIN 
+	listings_summary ls
+ON 
+	l.id=ls.id
+WHERE l.id='16165257'
+ORDER BY price_conv desc
+LIMIT 1
+
+--The spire Condo is an apartment, with 1 bedroom, 1 bath, and accommodates 3. 
+--The guests havce the entire apartment to themselves and it is in the heart of downtown. 
+--Amenities include TV, WiFi, AC, Pool, etc. 
+--The price is $2,200 a night, with a $250 security deposit, and no cleaning fee. 
+--The place has an average rating of 93, based on 22 reviews (can use this as a proxy for total bookings).
+
+---now i want to look at the reviews more, to get a sense of how people have enjoyed their stay here
+SELECT 
+	r.*
+FROM reviews r
+JOIN listings l
+ON r.listing_id=l.id
+WHERE l.id='16165257'
+
+--seems like more than have of the bookings were cancelled by the host prior to arrival, and in one instance, only 2 weeks notice. 
+--The rest of the reviewers seemed to really enjoy their stay. 
+
+---2. What neighborhoods seem to be the most popular?
+
+--To answer this, I want to look at the neighbourhoods with the most listings, 
+--and also bring in avg price, number of reviews, and average review score. 
+
+SELECT 
+	l.neighbourhood,
+	round(avg(cast(ls.price AS NUMERIC)),2) avg_price_conv,
+	sum(cast(l.number_of_reviews AS INTEGER)) number_of_reviews,
+	round(avg(cast(l.review_scores_rating AS INTEGER)),2) avg_review_score,
+	COUNT(*)
+FROM 
+	listings l
+JOIN 
+	listings_summary ls
+ON 
+	l.id=ls.id
+GROUP BY 1
+ORDER BY 5 desc
+
+
+--from this, we can see that Five Points has the most listings, with an average price of $165/night
+--There are almost 15k reviews, which I will use a proxy for bookings.
+--This is nearly twice as much as Highland, which has the second most listings
+--The avg review score is 83, which is decent
+
+----3. What time of year is the cheapest time to go to your city? What about the busiest?
+
+--Fiest I want to convert the price which is TEXT and contains '$' and ','
+--into numeric so I can calculate average by month
+
+--I also want to look at this by month, so I need to convert the text into date and then cast as month
+--The below is to just check to make sure my conversions run as expected in the query
+
+SELECT 
+	listing_id,
+    strftime('%m', date(date)) month,
+	available,
+	cast((REPLACE(REPLACE(price,'$',''), ',' , '')) as NUMERIC) price_conv
+FROM 
+	calendar
+
+--Now to find the cheapest time of year, I will take the aveage price, grouping by month
+--making sure to include only listings that are available
+
+SELECT 	
+	  strftime('%m', date(date)) month,
+	  ROUND(AVG(cast((REPLACE(REPLACE(price,'$',''), ',' , '')) as NUMERIC)),2) price,
+	  COUNT(*) listing_available
+FROM 
+	calendar
+	where available ='t'
+GROUP BY 1
+ORDER BY 2 ASC
+
+--January and February are the cheapest time to go to Demnver, based on average price of available listings
+--These two months also have the most listings available than the other months. 
+--Conversly, summer and fall months tend to be more expensive and have less availabilities, 
+--which is not suprising considering these are some of the nicest months to go to Denver. 
+
+
+---Now to find the busiest I want to count when a listing is or is not available, and group by month
+SELECT 
+    strftime('%m', date(date)) month,
+	SUM(CASE WHEN available = 'f' THEN 1 END) none_avail_tot,
+	SUM(CASE WHEN available = 't' THEN 1 END) avail_tot
+FROM 
+	calendar
+GROUP BY 1
+ORDER BY 3 ASC
+
+--September and June are the busiest, have these month have the least number of available listings, 
+--as well as some of the most unavailable listings than the other months
