@@ -1,0 +1,38 @@
+For each of the following scenarios, call out the potential biases in the proposed experiment. 
+Do your best to try to discover not only the bias, but the initial design. 
+There is plenty of room for interpretation here, so make sure to state what assumptions you're making.
+
+1. You're testing advertising emails for a bathing suit company and you test one version of the email in February and the other in May.
+
+Potential bias - Right away I see bias in selecting months that are 3 months apart. It would be better to have a consistent window
+to test the versions (i.e. in the same month). Also, assuming we are in the Western hemisphere, February is in the Winter, so 
+people are probably less likely to be interested in buying a bathing suit than they would in a warmer month like May. 
+
+2. You open a clinic to treat anxiety and find that the people who visit show a higher rate of anxiety than the general population.
+
+Potential bias - People that enter the clinic are more likely to have anxiety issues than the general population. So there is condition bias 
+here, as the groups are clearly not similar to each other. Also, the test group is being measured in the clinic
+whereas it is unknown how the anxiety of the general population is measured (likely survey results). Observer bias can occur as well
+as the clinic workers are the ones assessing the bias of the patients, whereas they are not assessing the anxiety of the general pop. 
+
+Initial Design - I assume that they wanted to measure the level of anxiety between those that enter the clinic, versus those that do not. 
+They are likely using survey results to infer the anxiety level of the general population, versus the observations of the clinic workers 
+to assess the anxiety level of their patients. 
+
+3. You launch a new ad billboard based campaign and see an increase in website visits in the first week.
+
+Potential bias - It would be wrong to infer that website visits increased solely due to the billboard, as one cannot be 100% certain 
+that seeing the billboard lead to an increase in visits. You cannot be certain the people visiting the site did so becausse they saw 
+the BB. Also, there does not seem to be a defined test and control group, as there could be site visitors that did not even see the billboard.
+Also, there could be other reasons for the increase. Were there any other promotions on other mediums? It might also be better to measure
+longer than a week, because the increase observed could be a result of randomeness. 
+
+4. You launch a loyalty program but see no change in visits in the first week.
+Potential bias - Like the other problem, 1 week might not be long enough to measure impact. Loyalty programs often take longer to 
+catch on. It would be better to measure change after a longer duration. 
+Also, the results could be conditional on how the loyalty program was promoted. Are visitors easily able to see the offer? 
+Additionally, is the intention of the loyalty program to increase visits, or retention? People join loyalty programs so they have the option
+of discounts and perks when they want them, which might not always be immediate. They might instead want to measure the number of signups to the program
+rather than visits. Also, what is the company and what are they selling? When is the program introduced relative the their seasonal trends in visitor traffic?
+
+Initial Design - Likely they are comparing visits from before the program, to visits afterwards. 
