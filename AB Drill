@@ -1,33 +1,68 @@
 Does a new supplement help people sleep better?
+  For this experiment, I am going to assume that sleeping better does not necessarily mean longer sleep,
+  but rather assist with uninterrupted sleep (and secondarily assist with falling asleep faster). 
   - Two Versions: Two groups of people, a control group that takes a placebo and a test group that takes the supplement. 
   
-  - A Sample: I would want to sample from a population of people with reported sleep problems (i.e. , 
-    ensuring that my sample is randomely distributed evenly between the two versions, and that each group is similar in age, gender,
-    and lifestyle habits. COME BACK
+  - A Sample: I would want to sample from a population of people with reported sleep problems
+   (similar problems, like waking up a lot during the night). I also need to ensurethat my sample is randomely distributed 
+   evenly between the two versions, and that each group is similar in age, gender, and lifestyle habits (i.e poor sleep is not 
+   a result of habits that impede sleep like excessive drinking).
 
-  - A Hypothesis: 
+  - A Hypothesis: The test group that takes the supplement will experience better (uninterrupted) sleep. 
 
-  - Outcomes of Interest:
+  - Outcomes of Interest: As I want to avoid self reported responses, I would want to measure sleep quality through 
+   a sleep monitoring app available on smart phones. For those that do not have a smart phone, 
+   they would be provided with a temporary device.The phone goes under the pillow and measures when someone is asleep. 
+   I would want to measure sleep over a span of 2-3 weeks. 
+   My key metric would be the number of times that someone wakes up during their sleep. 
+   My hypothesis will be supported if the test group wakes up less, on average, than the control group. 
 
-  - Other measured variables:
-
-
-
-
-
+  - Other measured variables: I would want to also measure the duration of sleep, how long it takes someone to fall asleep, 
+   and if someone wakes up, the length of time before they fall back asleep. 
 
 Will new uniforms help a gym's business?
+  For this experiment, I will assume that the gym has two locations, geographically close together, 
+  so that the makeup of the members are likely similar between the two gyms. 
+  I would measure these during a typical, non-peak, gym season, such as the Fall or Spring. 
 
-  - Two Versions: Two groups of people, a control group that takes a placebo and a test group that takes the supplement. 
+  - Two Versions: Gym A employees would wear the new uniforms and Gym B employees would wear casual wear. 
   
-  - A Sample: I would want to sample from a population of people with reported sleep problems (i.e. , 
-    ensuring that my sample is randomely distributed evenly between the two versions, and that each group is similar in age, gender,
-    and lifestyle habits. COME BACK
+  - A Sample: My sample would be prospective members of the gyms. Ideally I would want to measure this over a time span of 1-2 months. 
+  To make it easy to control for timing, I would introduce open informational sessions for people to come in to find out more about the membership. 
+  These would take place at the same time, at each gym, ideally daily. 
+  This would help (but not fully) randomize the sample between the gyms as they can choose between 
+  either location (both of which are close together). 
+  
+  - A Hypothesis: New Uniforms will help increase gym membership signups.  
 
-  - A Hypothesis: 
+  - Outcomes of Interest: My key metric would be new gym memberships. 
 
-  - Outcomes of Interest:
-
-  - Other measured variables:
+  - Other measured variables: While it might be hard to infer that people signed up purely due to the uniforms, 
+  I can survey the members that signed up to ask what factors influenced their decision, with an option being professional appearance. 
+  I can also monitor retention for the members that signed up at each location over the duration of the experiment.
+  
 Will a new homepage improve my online exotic pet rental business?
+  - Two Versions: Group A would be a random sample sent to the old site, and group B would be a random sample sent to the new version. 
+  
+  - A Sample: Assuming the extoic pet rental business is very niche (and likely to attract similar groups of users) 
+    my sample would be a random sample of visitors to the site, limited to a certain time frame each day. 
+  
+  - A Hypothesis: Visitors that are shown the new version of the site are more likely to rent an exotic pet. 
+
+  - Outcomes of Interest: My key metric would be pet rentals.
+
+  - Other measured variables: I might also want to track (if able to), bounce rate, page views, and time spent before placing a rental. 
+  These will also help me understand if the new version presents a better user experience overall. 
+
 If I put 'please read' in the email subject will more people read my emails?
+  - Two Versions: Version A would have the please read in the subject line and Version B does not. 
+  
+  - A Sample: Assuming I send a lot of emails (to have a large enough sample), my sample would be a group of randomely selected 
+  email recipients. I would want to make sure that each group is similar in age, gender, and that each group 
+  had received a similar number of emails from me prior to the experiment. 
+  
+  - A Hypothesis: Recipients that receive the Please Read email are more likely to read it. 
+  
+  - Outcomes of Interest: My key metric would be the number of read receipts I receive. 
+
+  - Other measured variables: I would also want to measure the number of responses to my emails. 
