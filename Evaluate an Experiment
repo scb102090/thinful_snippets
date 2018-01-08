@@ -1,1 +1,63 @@
+1. The Sith Lords are concerned that their recruiting slogan, "Give In to Your Anger," isn't very effective. 
+Darth Vader develops an alternative slogan, "Together We Can Rule the Galaxy." 
+They compare the slogans on two groups of 50 captured droids each. 
+In one group, Emperor Palpatine delivers the "Anger" slogan. In the other, Dark Vader presents the "Together" slogan.
+20 droids convert to the Dark Side after hearing Palpatine's slogan, while only 5 droids convert after hearing Vader's.
+The Sith's data scientist concludes that "Anger" is a more effective slogan and should continue to be used.
 
+Flaws: The key flaw is that there are two different observers presenting the slogan. Accordingly, one cannot control how the message is 
+delivered, as each observer likely has different presentation styles. Additionally, a flaw is in the sample selection, as these are not 
+randomely selected droids, but captured droids. Accordingly, they are likely to have different reactions to the two slogans than the entire 
+population of droids (i.e. less likely to respond positively to a message of 'togetherness'), 
+and thus represents potential selection and contextual bias. 
+
+Proposal: I would have 1 observer present both slogans, to avoid observer bias. Additionally, my sample would be two groups of
+randomely selected joins, from across the galaxy to avoid selection and contextual bias. 
+
+2. In the past, the Jedi have had difficulty with public relations. They send two envoys, Jar Jar Binks and Mace Windu, 
+to four friendly and four unfriendly planets respectively, with the goal of promoting favorable feelings toward the Jedi. 
+Upon their return, the envoys learn that Jar Jar was much more effective than Windu: 
+Over 75% of the people surveyed said their attitudes had become more favorable after speaking with Jar Jar, 
+while only 65% said their attitudes had become more favorable after speaking with Windu.
+This makes Windu angry, because he is sure that he had a better success rate than Jar Jar on every planet.
+The Jedi choose Jar Jar to be their representative in the future.
+
+Flaws: There are a few flaws with this. For one, like the first question, there are two observers, each with likely different
+presentation skills and techniques. Also, the sample populations between the planets that Jar Jar visits and the ones that Mace visit
+are very different (4 friendly, 4 unfriendly planets). It would make sense that the friendly planets would have more favorable opinions 
+of the Jedi than the unfriendly planets. Also, what we do not know is how the samples of each planet were selected. Were participants 
+randomely selected? Is each sample from the 8 planets roughly the same size? This would impact the interpretation of 'success rate'.
+To this point, is 75% success rate for friendly planets necessarily better than a 65% success rate for unfriendly planets, as it is likely harder
+to change the opinion of people on these planets in the first place. Additionally, to the point of Mace, there might be an 
+unnacounted for 'lurking variable' at hand (maybe the population and sample sizes on each planet?). If looking at the indivdual groups of people in each planet sample (based on age, demo, 
+title, history with the jedi, etc.), is there a pattern in the responses for each group that could give more insight into the results? 
+
+Proposal: I would want to make sure that each sample is reflective of each planet's population, and that each sample is roughly the same
+size (in proportion to the size of the planet). I would then have Jar and Mace each visit 2 friendly and 2 unfriendly planets, to control 
+for contextual and observer bias. I would then repeat the experiment, with a different sample of each planet, having Jar and Mace 
+visit the remaining 4 planets that they did not visit the first time. 
+
+3. A company with work sites in five different countries has sent you data on employee satisfaction rates for workers 
+in Human Resources and workers in Information Technology. Most HR workers are concentrated in three of the countries, 
+while IT workers are equally distributed across worksites. The company requests a report on satisfaction for each job type. 
+You calculate average job satisfaction for HR and for IT and present the report.
+
+Flaws: The first flaw is averaging job satisfaction across all countries, as this approach can lend itself to Simpson's Paradox. 
+Differences in job satisfaction are very likely to differ by country, as there are numerous country-specific factors and conditions
+that can impact overall job satisfaction. Averaging across all countries does not take into consideration the inherent differences
+in demographics and culture between countries. Thus, it would not be clear whether satisfaction differences are purely a 
+reflection of the profession, or impacted by other factors. Additionally, it is possible that job requirements differ between countries. 
+Also, averaging the satisfaction scores and comparing by profession is not ideal given that HR is only concentrated in 3 of the 5 countries.
+
+Proposal: I would want to separate satisfaction by country. For the 3 countries with HR workers, I would compare the satisfaction
+to that of IT workers of that country. For IT workers in the countries that do not have HR, I can compare satisfaction to the IT workers 
+of the 3 countries that have HR, to get a sense of how IT satisfaction differs by country. 
+
+4. When people install the Happy Days Fitness Tracker app, they are asked to "opt in" to a data collection scheme where their 
+level of physical activity data is automatically sent to the company for product research purposes.
+During your interview with the company, they tell you that the app is very effective because after installing the app,
+the data show that people's activity levels rise steadily.
+
+Flaws:
+
+Proposal: 
