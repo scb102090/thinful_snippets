@@ -12,7 +12,7 @@ population of droids (i.e. less likely to respond positively to a message of 'to
 and thus represents potential selection and contextual bias. 
 
 Proposal: I would have 1 observer present both slogans, to avoid observer bias. Additionally, my sample would be two groups of
-randomely selected joins, from across the galaxy to avoid selection and contextual bias. 
+randomely selected droids, from across the galaxy to avoid selection and contextual bias. 
 
 2. In the past, the Jedi have had difficulty with public relations. They send two envoys, Jar Jar Binks and Mace Windu, 
 to four friendly and four unfriendly planets respectively, with the goal of promoting favorable feelings toward the Jedi. 
@@ -58,6 +58,21 @@ level of physical activity data is automatically sent to the company for product
 During your interview with the company, they tell you that the app is very effective because after installing the app,
 the data show that people's activity levels rise steadily.
 
-Flaws:
+Flaws: There is obvious sample bias in this experiment, because the people who opt in are likely more physically active, and thus 
+more comfortable to have their daily activity shared. Additionally, if those that opt in are already more inclined to be physically active,
+overall activity levels are likely to rise, which might not be an accurate conclusion given the inherent bias in the sample. 
 
-Proposal: 
+Proposal: Instead of having an optional opt-in, I would anonymously collect data about all users (to be stated in the terms and agreement
+of using the app). This would give a more representative sample of people that use the app. 
+
+5. To prevent cheating, a teacher writes three versions of a test. She stacks the three versions together, 
+first all copies of Version A, then all copies of Version B, then all copies of Version C. 
+As students arrive for the exam, each student takes a test. When grading the test, the teacher finds that students who took Version B 
+scored higher than students who took either Version A or Version C. She concludes from this that Version B is easier, and discards it.
+
+Flaws: The flaw to this is that the three versions were not assigned randomely, but rather were assigned based on the order students
+enter the classroom. She can not be clear if Version B was actually easier, or if the students who entered the classroom when Version B 
+was on top were more academically inclined to do well on the test. 
+
+Proposal: Since she cannot control when people enter the classroom, she would need to randomize the assignment of the tests (i.e.
+shuffle the Versions together before the students arrive. 
