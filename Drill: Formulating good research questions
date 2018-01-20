@@ -1,0 +1,32 @@
+Categorize each of the following research questions as "good" or "bad", and provide alternative formulations for the bad ones. 
+Save your responses in a document of some kind, submit a link below, and discuss your reasoning with your mentor.
+
+What is the 1994 rate of juvenile delinquency in the U.S.? Bad- This already known and would not require a model (i.e nothing to predict)
+A better question would be, what will the juvenile delinquency rate be in 2020. 
+
+What can we do to reduce juvenile delinquency in the U.S.? Bad- This is a vague question and broad in scope. It cannot easily
+be translated into a numerical solution. A better question would be, what are the factors that have the most power in explaining
+delinquency rate. From this question, they can then guage which are the factors that they need to focus on. 
+
+Does education play a role in reducing juvenile delinquents' return to crime? Good
+
+How many customers does AT&T currently serve in Washington, DC? Bad - This should be a known quantity and would not require a model. 
+A better question would be how many customers in the DC area use other service providers. 
+
+What factors lead consumers to choose AT&T over other service providers? Good assuming the factors can be defined with the data available.
+
+How can AT&T attract more customers? Bad - the last question is better. This could be framed, which factors are predictive of customes 
+choosing other service providers. 
+
+Why did the Challenger Shuttle explode? Bad - It could have exploded for various reasons, some of which might not be quantified 
+numerically. Better question - What is the likehood of a shuttle exploding, based on the probability of system failure for each part 
+of the shuttle.
+
+Which genes are associated with increased risk of breast cancer? Good
+
+Is it better to read to children at night or in the morning? Bad - What does better mean? Does it mean reading profiency?
+Do they sleep more? This should be something that is quantifiable and more defined. Better question - Does reading to children at night 
+improve their reading levels more so than reading in the morning. 
+
+How does Google’s search algorithm work? Bad- This is more of a technical question about process, and does not involve predicting
+any outcome based on certain factors. Better to ask - What are the factors of a search that are most predictive of the search results order.
