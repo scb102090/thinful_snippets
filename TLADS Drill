@@ -3,15 +3,15 @@ and if continuous as ordinal, interval, or ratio variables.
 Check your work with your mentor, and discuss what that information might imply for feature engineering with this data.
 
 cntry: categorical
-year: categorical 
-idno:continuous (ordinal)
-tvtot: continuous (interval based on the scale of responses, and each number reflects a range of time. Otherwise ratio)
-ppltrst: continuous (interval)
-pplfair: continuous (interval)
-pplhlp: continuous (interval)
-happy: continuous (interval)
-sclmeet: continuous (ordinal)
-sclact: continuous (ordinal)
-gndr: categorical
+year: categorical (a choice i need to make to model) it could be continuous. is it meaningful to interpreate it a certain way/
+idno:continuous (ordinal) - does ordering of ID numbers mean something? time of which user joined. if not, likely categorical. probably useless
+tvtot: continuous (ordinal) could be modeled as categorical
+ppltrst: continuous (ordinal) could be modeled as categorical
+pplfair: continuous (ordinal) could be modeled as categorical
+pplhlp: continuous (ordinal) could be modeled as categorical
+happy: continuous (ordinal) could be modeled as categorical
+sclmeet: continuous (ordinal) could be modeled as categorical
+sclact: continuous (ordinal) could be modeled as categorical
+gndr: categorical 
 agea: continuous (ratio)
 partner:  categorical
