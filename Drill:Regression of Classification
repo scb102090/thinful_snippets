@@ -1,0 +1,27 @@
+For each of the following situations, decide if you would model using a regression or classification model. 
+Discuss your reasoning with your mentor next time you meet.
+
+Q:The amount a person will spend on a given site in the next 24 months. 
+A:Regression, as amount spent can range from 0 to some potentially very large obersavble max. Continuous variable looking for realtionship
+between variables. 
+
+Q:What color car someone is going to buy.
+A: Classification since car color as a classifer would assing a category to a given test observation
+
+Q:How many children a family will have.
+A:Could be either. For classification you can rank the liklehood of each value of children, 
+but with regression you can find the most liekly place along a continuous line.
+
+Q:If someone will sign up for a service.
+A: Classification, as this would take discrete value, like {yes,no}. 
+
+Q:The number of times someone will get sick in a year.
+A: Could be either but I would model regression, 
+because the value could range form zero to potentially large (uper bound of 365) and icould find the outcome on a continuous line.
+
+Q:The probability someone will get sick in the next month.
+A: Classification, as you can discretely label the variable, as {will get sick, will not get sick}, and the variable can 
+assign a probablity of each category (prob of getting sick). 
+
+Q:Which medicine will work best for a given patient.
+A: Classification - discretely labeled and probabilities can be assigned .
