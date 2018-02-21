@@ -5,10 +5,25 @@ Write up your thoughts in submit a link below.
 
 
 I could use KNN to find similarities in credit card holder payment behavior, based on the spend of the 4 categories and classify them 
-baed on their likelihood to pay on time. 
+based on their likelihood to pay on time. There are a variety of factors that influence the behavior to pay off a credit card so this type 
+of model will be useful, when trying to understand the combined realtionship these factors have on the outcome variable.  Another beneficial 
+part of KNN would be the ability to choose the number of neighbors to use as the K and being able to weigh the observations used in K 
+by the distance to the predicted datapoint. Also, its a plus that my variables are all continuous. 
 
 There are things I would need to do in order to run this: 
 
-Normalize- Since the spend of the 4 categories likely have different bounds and ranges, I could either: 
+  First looking at the data, I would want to understand the relationship each variable has with the outcome variable, as well
+  as looking at possible correlations my inputs have with each other. Maybe I would consider not using all of the given features
+  dpending in their impact on my model in predicting the outcome. 
+
+  Normalize- Since the spend of the 4 categories likely have different bounds and ranges, I could either: 
   1. set bounds to 0 and 1, and recale every variables witin those bounds. I would first want to look to see if these variables have 
   a linnear relationship with my outcome variable, to understand whether scaling to a 0 and 1 range makes sense. 
+  2. calculate z scores, and use them as basis for measuring distance, which puts everything in terms of how far from the mean it is. 
+  note- scaling could prove problematic, if i am interested in looking at total spend as a predictor of late payments. 
+  
+  Weighting - Likely some variables are more significant in predicting late paymnets than others, so these variables should be weighted by 
+  distance. Those data points now, with lower distances will have a higher weight than higher distances. 
+  
+  Selecting K - I would want to try multiple models here, and cross validate to see which K amount is best
+  
