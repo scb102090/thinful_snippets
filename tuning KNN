@@ -2,3 +2,13 @@ Let's say we work at a credit card company and we're trying to figure out if peo
 We have everyone's purchases, split into four main categories: groceries, dining out, utilities, and entertainment. 
 What are some ways you might use KNN to create this model? What aspects of KNN would be useful? 
 Write up your thoughts in submit a link below.
+
+
+I could use KNN to find similarities in credit card holder payment behavior, based on the spend of the 4 categories and classify them 
+baed on their likelihood to pay on time. 
+
+There are things I would need to do in order to run this: 
+
+Normalize- Since the spend of the 4 categories likely have different bounds and ranges, I could either: 
+  1. set bounds to 0 and 1, and recale every variables witin those bounds. I would first want to look to see if these variables have 
+  a linnear relationship with my outcome variable, to understand whether scaling to a 0 and 1 range makes sense. 
