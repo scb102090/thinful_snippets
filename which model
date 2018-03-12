@@ -1,0 +1,63 @@
+1.Predict the running times of prospective Olympic sprinters using data from the last 20 Olympics.
+
+For this question, a multivariable linear regression model would be well suited. This type works well with taking mutliple variables
+and see how they impact the outcome of interest . There is also a large sample size of runners (high n) over the last 20 olympics. 
+
+There will likely be correlation between the available variables, and variables of different types, to pay attention to when 
+choosing the right model. Depending in this ( and the numbenr of features) KNN regression might also work. 
+
+2.You have more features (columns) than rows in your dataset.
+
+Lasso would be good here to narrow down the features and to control for shared correlations amongst the inputs. 
+Through shrinkage Lasso is also good at overfitting-protection. Lasso is good for high numner of features and
+a low number n, as is SVM. 
+
+Methods like PCA, RFE, feature_importance_, etc. could also help fine-tune the inputs in the model. 
+
+3.Identify the most important characteristic predicting likelihood of being jailed before age 20.
+
+Since I am interesting in exactly which features are most important, and I want to predict the probabiltity of a categorical outcome, 
+logistic regression would work well here. 
+
+A simple decision tree could also be useful, to divide the data set on the features that best explain the outcome of interest. It 
+would be good to find features that separate those who were and were not jailed before 20. 
+
+4.Implement a filter to “highlight” emails that might be important to the recipient
+
+Naive Bayes would work well for this. Much like the spam or fruad filter, since we are dealing with text, NB handles this well. 
+NB would also do well in identifying the probability that an email is or is not important, given few features. 
+
+Another good model would be a random forest. Since this scenario isn't wanting to find out any specific characteristics but 
+rather decide whether an email is important or not, a random forest is very strong performer because it can generate many
+trees that are different and compare all of their predicted results.
+
+5.You have 1000+ features.
+
+I would consider using a Lasso regression here again, to reduce the number of features to those that are most important in predicting
+desired outcome. Methods like feature importance and PCA could also prove useful. These all would help correct for correlations shared 
+among the features. 
+
+Knowing what the desired outcome is would help select the best type of model. 
+
+6.Predict whether someone who adds items to their cart on a website will purchase the items.
+
+There are a few options that would work here. 
+I would go with logsitic regression with a binary classifer or even KNN to look at the similarity of buying trends and their impact 
+on the outcome. 
+
+Additionally, a random forest would do well at predicting the probability of whether or not someone will purchase their
+items by generating many decision trees and comparing all of their predicted results.
+
+7.Your dataset dimensions are 982400 x 500
+I would take the same approach as number 5. I would want to narrow down my feature selection, and select the most important features. 
+The actual outcome desired will help inform the specific model selected. 
+
+
+8.Identify faces in an image.
+
+I would use random forest most likely, due to its ability to genrerate many trees (and rules) that are different, in order to compared 
+the predicted results. This could take a lot of processing power the more complex the model is though. 
+
+9.Predict which of three flavors of ice cream will be most popular with boys vs girls.
+
+This seems like a simple logistic regression, depending on what data is provided. 
