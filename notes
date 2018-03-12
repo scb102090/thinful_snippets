@@ -1,0 +1,44 @@
+NOTES:
+Models:
+- Naive Bayes (learning via probability)
+    - assumes independence among variables
+    - fast
+    - works well with sentiment analysis, spam filtering
+- Linear Regression (single or Multivariable) (learning via errors)
+    - assumes linear relationship with the outcome
+    - errors have a normal distribution
+    - homoscedasticity
+    - low or no correlation among features
+    - "cost" is the errors
+- KNN (learning through similarity)
+    - similarity model
+    - classification or regression (averages the votes, or weighted-averages the votes)
+- Decision Trees (learning from questions) - classification or regression
+    - pro: easy to represent model visually
+    - pro: can handle varied types of data
+    - pro: feature selection is part of the model
+    - pro: easy to use with little data prep
+    - con: randomly created each time
+    - con: incredibly prone to overfitting
+    - con: biased towards the dominant class, balanced data needed
+    - outcome is binary, inputs are categorical
+- Random Forest [ensemble model]
+    - black box
+    - low variance and high accuracy
+- Logistic Regression/Classifier [multinomial logistic regression - more than binary]
+    - dependent variable is categorical/binary
+- Ridge Regression/Classifier
+    - "costs" is based on large coefficients, squares
+    - good when lots of correlation among features
+- Lasso Regression/Classifier
+    - "costs" is based on large coefficients, absolute value
+    - good when there are lots of predictors
+- Linear SVM/Classifier/clustering
+    - flexible
+    - great visual explanatory power (linear)
+    - accurate (kernel smoothing)
+    - clustering
+    - control the specificity of training (regression)
+    - does many different things very well
+ Gradient Boost - classifier/regression   
+    
