@@ -1,0 +1,23 @@
+1.Define the likelihood that an individual will contract a specific disease
+Supervised, as we have an outcome that we are attempting to predict, which the likelihood of contracting a disease. 
+
+
+2.Translate a set of images into variables for modeling
+Unsupervised as we don't have any particular outcome we are trying to predict/learn about. 
+Unsupervised models can help uncover the latent variables, which are impactful but not explicitly defined in the initial dataset.
+
+
+3.An ecommerce company wants to identify power users
+Supervised if there is a definition of what constitutes a power user. If so, we can use supervised models to predict whether 
+a user is a power user or not. If this is not defined unsupervised models would help idenitfy patterns, or cluster in users, which can 
+then be used to interepret which cluster would constiute power users. 
+
+
+4.That same company wants to see shopping patterns in users
+Unsupervised - there is not outcome, but rather we are explicitly looking for patterns which unsupervised tehcniques can uncover. 
+
+
+
+5.You want to reduce the number of variables inputting into your random forest model
+Could be both. PCA, an unupervised technique will help reduce the number of variables. However, there are supervised techniques
+that are good at reducing the number of features (feature importance, lasso, ridge, etc.)
